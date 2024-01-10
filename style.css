@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#nav-bar li {
+  padding: 0px 20px;
+  list-style: none;
+  position: relative;
+}
+
+#nav-bar li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease;
+}
+
+#nav-bar li a:hover,
+#nav-bar li a.active {
+  color: crimson;
+}
+
+#nav-bar li a.active::after,
+#nav-bar li a:hover::after {
+  content: '';
+  width: 30%;
+  height: 2px;
+  background: crimson;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 64px;
+  color: crimson;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 64px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: white;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+
+
+body {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left:0;
+}
+
+#hero {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fwae335tvcf031.jpg&f=1&nofb=1&ipt=29fa76bcf47e59fa68fac4040d471dcd09140ba9b503527fc4b82dcd7d09c696&ipo=images");
+  height: 100vh;
+  width: 100%;
+  background-color: #333333;
+  background-size: cover;
+  background-position: center;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  
+}
+
+#hero h2 {
+  padding-bottom: 25px;
+}
+
+#hero button {
+  font-size:20px;
+  font-weight:700px;
+  color:white;
+  background-color:crimson;
+  border:0;
+  padding: 14px 80px 14px 65px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  
+}
+#hero button:active{
+  opacity:.4;
+}
+#hero button:hover{
+  background-color: white;
+  color:crimson;
+  transition: 1s;
+  
+  cursor:pointer;
+  opacity:.7;
+}
+#product1{
+
+  text-align:center;
+}
+#product1 .pro-container{
+  display:flex;
+  justify-content:space-between;
+  padding-top:20px;
+  flex-wrap: wrap;
+}
+
+
+#product1 .pro {
+  position: relative;
+  display: flex; /* Add Flexbox */
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product1 .pro .des {
+  text-align: center; /* Align description text in the center */
+  padding: 10px;
+}
+
+.shop-button {
+  background-color: crimson;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  margin: 4px;
+  padding: 4px 4px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.shop-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.shop-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.shop-button:hover span {
+  padding-right: 25px;
+}
+
+.shop-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#Deal-Banner{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background-image:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.jKRszY6S_nqyP_zaG6wURQHaEK%26pid%3DApi&f=1&ipt=3adb5d08b42c6fbb7411351941d1324c2897718375116bc658cb56726c23a325&ipo=images");
+  background-size:cover;
+  background-position:center;
+  padding:10px 20px;
+  width:100%;
+  height:40vh;
+  background-size: cover;
+  background-position:center ;
+  
+  
+}
+
+#Deal-Banner h2{
+  color: White;
+}
+#Deal-Banner span{
+  color: crimson;
+}
+#Deal-Banner button {
+  font-size:20px;
+  font-weight:700px;
+  color:white;
+  background-color:crimson;
+  border:0;
+  padding: 14px 80px 14px 65px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  padding: 10px 20px;
+  margin-top: 20px;
+
+}
+#Deal-Banner button:active{
+  opacity:.4;
+}
+#Deal-Banner button:hover{
+  background-color: white;
+  color:crimson;
+  transition: 1s;
+
+  cursor:pointer;
+  opacity:.7;
+}
