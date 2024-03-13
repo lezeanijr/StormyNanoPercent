@@ -9,8 +9,8 @@
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin-top: 20px;
   display: flex;
 }
@@ -38,7 +38,7 @@
 
 #nav-bar li a:hover,
 #nav-bar li a.active {
-  color: crimson;
+  color: white;
 }
 
 #nav-bar li a.active::after,
@@ -46,10 +46,33 @@
   content: '';
   width: 30%;
   height: 2px;
-  background: crimson;
+  background: white;
   position: absolute;
   bottom: -4px;
   left: 20px;
+}
+#mobile {
+display: none;
+align-items: center;
+}
+
+
+#mobile.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+    
+}
+.material-symbols-outlined {
+    color: white;
+  margin-left: 20px;
+}
+.material-symbols-outlined:hover {
+  cursor: pointer;
+  opacity: .7;
+transition: .02s;
 }
 
 h1 {
@@ -61,13 +84,13 @@ h1 {
 h2 {
   font-size: 46px;
   line-height: 64px;
-  color: crimson;
+  color: black;
 }
 
 h3 {
   font-size: 20px;
   line-height: 64px;
-  color: #222;
+  color: crimson;
 }
 
 h4 {
@@ -82,7 +105,7 @@ h6 {
 
 p {
   font-size: 16px;
-  color: white;
+  color: black;
 }
 
 .section-p1 {
@@ -111,23 +134,26 @@ body {
   top: 0;
   left:0;
 }
-
+.shop-page-title{
+  color:white;
+}
 #hero {
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fwae335tvcf031.jpg&f=1&nofb=1&ipt=29fa76bcf47e59fa68fac4040d471dcd09140ba9b503527fc4b82dcd7d09c696&ipo=images");
+  background-image: url("LOGO-IMAGES/dbgwoman#3.jpg");
   height: 100vh;
   width: 100%;
   background-color: #333333;
   background-size: cover;
-  background-position: center;
+  background-position: top 25% right 0;
   padding: 0 80px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  
+  padding-top: 150px;
 }
 
 #hero h2 {
+  color:white;
   padding-bottom: 25px;
 }
 
@@ -135,8 +161,8 @@ body {
   font-size:20px;
   font-weight:700px;
   color:white;
-  background-color:crimson;
-  border:0;
+  background-color: transparent;
+  border: 2px solid white;;
   padding: 14px 80px 14px 65px;
   border-radius: 8px;
   transition: 0.2s ease;
@@ -153,6 +179,9 @@ body {
   cursor:pointer;
   opacity:.7;
 }
+
+
+
 #product1{
 
   text-align:center;
@@ -191,7 +220,7 @@ body {
 }
 
 #product1 .pro .des {
-  text-align: center; /* Align description text in the center */
+  text-align: center; 
   padding: 10px;
 }
 
@@ -230,6 +259,30 @@ body {
   opacity: 1;
   right: 0;
 }
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color:white;
+  background-color:crimson;
+  border-radius:4px ;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+button.normal:hover  {
+  opacity: .7;
+  background-color: white;
+  color:crimson;
+  transition: .02s;
+}
+button.normal:active{
+  opacity:.4;
+  
+}
+
 #Deal-Banner{
   display:flex;
   flex-direction:column;
@@ -242,9 +295,6 @@ body {
   padding:10px 20px;
   width:100%;
   height:40vh;
-  background-size: cover;
-  background-position:center ;
-  
   
 }
 
@@ -263,7 +313,7 @@ body {
   padding: 14px 80px 14px 65px;
   border-radius: 8px;
   transition: 0.2s ease;
-  padding: 10px 20px;
+  
   margin-top: 20px;
 
 }
@@ -276,5 +326,423 @@ body {
   transition: 1s;
 
   cursor:pointer;
-  opacity:.7;
+ 
+}
+#Deal-Banner button:active{
+   opacity: .7;
+    background-color: gray;
+    transition: .2s;
+  }
+
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 180px;
+  
+  
+}
+#sm-banner .banner-box{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  text-align:center;
+  background-image:url("LOGO-IMAGES/mexicanbro (1).jpg");
+  min-width:500px;
+  height:50vh;
+  background-size: cover;
+  background-position:center ;
+  padding: 30px;
+   border-radius: 20px;
+  
+  }
+#sm-banner .banner-box-2{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  text-align:center;
+  background-image:url("LOGO-IMAGES/HANDWRAP.jpg");
+  min-width: 500px;
+  height: 50vh;
+  background-size: cover;
+  background-position:center ;
+  padding: 30px;
+  border-radius: 20px;
+ 
+  }
+#sm-banner .banner-box h2{
+  color:white;
+  font-size:22px;
+  font-weight:300;
+}
+#sm-banner .banner-box-2 h2{
+  color:white;
+  font-size:22px;
+  font-weight:300;
+}
+.custom-images{
+  display: flex;
+}
+#newsletter 
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%3A%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.g4Icabsv5iZNdWjs8A1yogHaEK%26pid%3DApi&f=1&ipt=8e8cea488ded164b37288745e93a744f45ba045dc6195fc3c029a32c984a0b6c&ipo=images");
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #f8f8f8;
+}
+
+#newsletter h4{
+  font-size:22px;
+  font-weight:700;
+  color: black;
+}
+#newsletter p{
+font-size: 14px;
+  font-weight:600;
+  color: #333333;
+}
+
+#newsletter p span{
+  color:crimson;
+}
+#newsletter .form{
+  display:flex;
+  width:40%;
+} 
+#newsletter input{
+height:3.125 rem;
+  padding: 10px 15px 10px 15px;
+  font-size:14px;
+  width:100%;
+  border:1px solid transparent;
+  border-radius: 4px ;
+outline:none;
+  border-top-right-radius:0 ;
+  border-bottom-right-radius:0 ;
+}
+
+
+#newsletter button:hover{
+  color:crimson;
+  background-color:white;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+#newsletter button:active{
+opacity: .7;
+background-color: gray;
+transition: .2s;}
+footer {
+display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  color: black;
+}
+
+
+footer.col{
+display: flex;
+flex-direction: column; 
+  align-items: flex-start; 
+  margin-bottom: 20px;
+}
+.logo-footer{
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.aboutlist{
+ 
+  list-style-type: none;
+}
+footer.logo {
+margin-bottom: 10px;
+}
+footer h4{
+font-size: 14px; 
+  padding-bottom: 20px;
+}
+
+footer p {
+font-size: 13px; margin: 0 0 8px 0;
+}
+footer a{
+font-size: 13px;
+text-decoration: none;
+color:black;
+margin-bottom:10px;
+}
+footer a:hover{
+  color:crimson;
+  
+}
+
+
+footer.follow {
+  margin-top: 20px;
+}
+footer.follow i{
+  color: #465b52;
+  padding-right: 4px; 
+  cursor: pointer;
+}
+
+footer.install.row img {
+  border: 1px solid white;
+  border-radius: 6px;
+}
+footer.install img{
+ margin: 10px 0 15px 0;
+}
+
+#footer follow i:hover{
+  color:crimson;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/*shop page*/
+#page-header{
+  background-image: url("https://wallpapercave.com/wp/wp2776777.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+}
+#pagination{
+ 
+ text-align: center;
+}
+#pagination a{
+  text-decoration: none;
+  background-color: crimson;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+    
+}
+.paginationarrow {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+}
+#product-details .single-pro-img{
+  width:40%;
+  margin-right:50px;
+}
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#product-details{
+  display: flex;
+  margin-top: 20px;
+}
+#product-details .single-pro-details{
+  width: 50%;
+  padding-top: 30px;
+}
+
+#product-details .single-pro-details h4{
+  padding: 40px 0 20px 0;
+  
+}
+
+#product-details .single-pro-details h2{
+ 
+font-size: 26px;
+}
+#product-details .single-pro-details select{
+  padding: 5px 10px ;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#product-details .single-pro-details input{
+ width: 50px;
+  height:47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+
+}
+.pay-pic{
+  height: 40px;
+  width: 60px;
+  border: 3px solid;
+  border-radius: 4px;
+  border-color: gray;
+}
+#product-details .single-pro-details button:hover{
+  background-color: whitesmoke;
+  color:crimson;
+}
+#product-details .single-pro-details button:active{
+  opacity: .7;
+  background-color: gray;
+  transition: .2s;
+}
+
+#product-details .single-pro-details span{
+  line-height: 25px;
+}
+#product-details .single-pro-details input:focus{
+  outline: none;
+}
+/*********cart page**********/
+
+/*********media**********/
+@media(max-width: 800px)
+
+#navbar
+{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+position: fixed;
+top: 0;
+right: -300px;
+height: 100vh;
+width: 300px;
+background-color: black;
+box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+padding: 80px 0 0 10px;
+  transiton: 0.3s;
+}
+
+#navbar li{
+  margin-bottom: 25px;
+}
+#navbar.active{
+  right:0px;
+  
+}
+#mobile {
+display: none;
+align-items: center;
+}
+
+#close{
+  display: initial;
+}
+
+#mobile span {
+    color: white;`
+  margin-left: 20px;
+  
+}
+#close{
+  position:absolute;
+  top: 10px;
+  left: 30px;
+  color: black;
+  font-size:24px;
+}
+#hero{
+  height: 70vh;
+  padding: 0 80px;
+  background-position: top 10% right 30%;
+}
+#product1.pro-container{
+  justify-content: center;
+
+};
+#product1 .pro{
+  margin: 15px;
+}
+#Deal-Banner{
+  height: 50vh;
+}
+#sm-banner{
+  min-width: 100%;
+  height:30vh;
+}
+#newsletter{
+  flex-direction: column;
+}
+#newsletter .form{
+  width: 70%;
+}
+
+@media(max-width: 477px){
+  #header{
+    padding:10px 30px;
+  }
+  #hero{
+    padding: 0 30px;
+    background-position: 55%;
+  }
+  h1{
+    font-size: 30px;  
+  }
+  h2{
+    font-size: 22px;
+  }
+  #product1 .pro{
+    width: 100%;
+  }
+  #Deal-Banner{
+    height: 40vh;
+  }
+  #sm-banner .banner-box{
+    height: 40vh;
+  }
+  #sm-banner .banner-box2{
+    height: 40vh;
+  }
+  #newsletter .form{
+    width: 100%;
+  
+  }
+  #newsletter{
+    padding: 40px 20px;
+  }
+  footer .copyright{
+    text-align: start;
+  }
+  #custom-design.custom-design-des{
+    display: flex;
+    text-align: center;
+  }
+  /***********single product page**********/
+  #product-details{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #product-details .single-pro-img{
+    width: 100%;
+    margin-right: 0px;
+  }
+  #product-details .single-pro-details{
+    width: 100%;
+  }
 }
